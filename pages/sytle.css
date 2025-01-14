@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-board {
+  width: 100%;
+  height: 500px;
+  border-bottom: 30px solid rgb(67, 150, 78);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    rgb(62, 200, 255),
+    rgba(255, 153, 0, 0.418),
+    rgb(253, 174, 187)
+  );
+}
+.cloud-first {
+  position: absolute;
+  top: 110px;
+  width: 200px;
+  animation: first-cloud-animation 18s infinite linear;
+}
+
+.cloud-second {
+  position: absolute;
+  width: 250px;
+  animation: second-cloud-animation 30s infinite linear;
+}
+
+.ball {
+  position: absolute;
+  width: 80px;
+  bottom: 0;
+  animation: ball-animation 1.4s infinite linear;
+}
+
+.cat {
+  width: 105px;
+  position: absolute;
+  bottom: 0;
+}
+
+.jump {
+  animation: cat-jump 500ms ease-out;
+}
+
+@keyframes ball-animation {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes cat-jump {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 130px;
+  }
+  50% {
+    bottom: 130px;
+  }
+  60% {
+    bottom: 130px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes first-cloud-animation {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes second-cloud-animation {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 100%;
+  }
+}
