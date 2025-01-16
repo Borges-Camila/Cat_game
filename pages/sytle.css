@@ -34,7 +34,7 @@
   position: absolute;
   width: 80px;
   bottom: 0;
-  animation: ball-animation 1.4s infinite linear;
+  animation: ball-animation 1.6s infinite linear;
 }
 
 .cat {
@@ -60,7 +60,7 @@
   0% {
     bottom: 0;
   }
-  40% {
+  35% {
     bottom: 130px;
   }
   50% {
